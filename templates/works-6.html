@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーMarie Nishimae ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Marie Nishimaeのポートフォリオサイトです。'>
+  <meta property="og:image" content="{{ url_for('static', filename='img/ogp.png') }}">
+  <meta name="description" content="Marie Nishimaeのポートフォリオサイトです" />
+  <title>Marie Nishimae ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/destyle.css') }}" media="all" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="all" type="text/css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <link rel="canonical" href="URLが入る">
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">Marie Nishimae</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="./index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">オンラインクリニックアプリに使うイラスト</h2>
+          <div class="woks-main-img">
+            <img src="img/works-img-main6.png" alt="works-main-img6" />
+          </div>
+          <div class="article-body">
+            <h3>担当</h3>
+            <p>デザイン</p>
+            <h3>イラストの目的</h3>
+            <p>サービスの認知と新規クライアントの獲得</p>
+            <h3>ターゲット</h3>
+            <p>30~50代、女性、美容と健康に興味のある方</p>
+            <h3>デザインについて</h3>
+            <h3>ポイント1</h3>
+            <p>ベージュとオレンジを基調に、低彩度で大人の女性の洗練された印象を表現いたしました。切り絵風の重なりをイメージしております。</p>
+
+            <h3>ポイント2</h3>
+            <p>角丸の四角で統一感を出し、錠剤のイラストをランダムに配置してクリニックらしさを表しております。</p>
+
+            <h3>ポイント3</h3>
+            <p>5パターンの問診シーンを異なる配色とモチーフで制作いたしました。オンライン診察をイメージし、スマートフォンから飛び出す描写をしております。<br>下記の対象物をイメージし、イラストの制作を行いました。</p>
+            </p>
+            <ul>
+                <li>花粉症・鼻風邪: ティッシュで鼻をかむ女性。</li>
+                <li>漢方: 漢方薬とヨモギ。</li>
+                <li>ドライアイ: 目薬をさす女性。</li>
+                <li>肥満症治療: 体重計に足を乗せる女性。</li>
+                <li>ニキビ治療: ニキビに手を添える女性。</li>
+                <li>問診を受けている女性と主治医、女医。</li>
+            </ul>
+            <div class="home-link">
+              <a href="./#works">Works一覧へ</a>
+            </div>
+          </div>
+      </article>
+
+      <div class="page-top" id="js-page-top">
+        <span class="material-icons-outlined">expand_less</span>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">&copy;Marie Nishimae</div>
+    </footer>
+    <!-- /footer -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>

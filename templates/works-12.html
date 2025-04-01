@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーMarie Nishimae ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Marie Nishimaeのポートフォリオサイトです。'>
+  <meta property="og:image" content="img/ogp.png">
+  <meta name="description" content="Marie Nishimaeのポートフォリオサイトです" />
+  <title>Marie Nishimae ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/destyle.css') }}" media="all" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="all" type="text/css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}" />
+  <link rel="canonical" href="URLが入る" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <h1 class="header-logo">
+          <a href="index.html">Marie Nishimae</a>
+        </h1>
+        <nav class="gnav">
+          <ul class="gnav-list">
+            <li class="gnav-item"><a href="./index.html#works">WORKS</a></li>
+            <li class="gnav-item"><a href="./index.html#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="./index.html#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="./index.html#contact">CONTACT</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+
+    <main class="content">
+      <article class="article">
+        <div class="article-container">
+          <h2 class="article-title">Instagramアイコン用画像</h2>
+          <div class="woks-main-img">
+            <img src="img/works-img-main12.png" alt="works-img-main12" />
+          </div>
+          <div class=" article-body">
+            <h3>担当</h3>
+            <p>デザイン</p>
+            <h3>イラストの目的</h3>
+            <p>サービスの認知と新規クライアントの獲得</p>
+            <h3>ターゲット</h3>
+            <p>10～30代、男女、学生や社会人</p>
+            <h3>デザインについて</h3>
+            <ul>
+              <li>赤ちゃんらしいパステルカラーで配色:
+                淡い配色で背景を三種類変えることで視覚的に変化をプラスしております。柄は描かずに、アイコンとして使用した時に見えやすく表現しております。また、パステルカラーの水色、黄色、緑色を使用しているため、中性的な色合いになっており、可愛いものが好きな男性でも使用しやすいように配慮しております。
+              </li>
+              <li>３つのアイコンが繋がっているイラスト
+                左端から右に進むにつれて食べ物をどんどん食べているような描写になっています。最後に食べ終えてあくびをしている三段階のイラストです。また、ご依頼主様が日によって変えられるようになっています。
+              </li>
+              <li>
+                アルビノという種類のネズミの赤ちゃん
+                グレーや茶色の種類のネズミと差別化を図り、生成り色の体と赤い目のアルビノの種類を描きました。そして、目が赤いことでより印象的に見えるように配色しています。
+              </li>
+              <li>
+                外国のアニメや漫画のような表情:
+                目をオーバーめに描き縁取りを黒で書くことでポップな印象になるように工夫しております。輪郭からあえて色がはみ出すような色付けにすることで、版ズレしている漫画に見えるように意識しております。
+              </li>
+            </ul>
+          </div>
+        </div>
+  </div>
+  </article>
+
+  <div class="page-top" id="js-page-top">
+    <span class="material-icons-outlined">expand_less</span>
+  </div>
+  </main>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="copyright">&copy;Marie Nishimae</div>
+  </footer>
+  <!-- /footer -->
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
+</html>
