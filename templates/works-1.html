@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta property='og:type' content='website'>
-    <meta property='og:title' content='WebデザイナーMarie Nishimae ポートフォリオ'>
-    <meta property='og:url' content='URLが入る'>
-    <meta property='og:description' content='Marie Nishimaeのポートフォリオサイトです。'>
-    <meta property="og:image" content="{{ url_for('static', filename='img/ogp.png') }}">
-    <meta name="description" content="Marie Nishimaeのポートフォリオサイトです" />
-    <title>Marie Nishimae ポートフォリオ</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/destyle.css') }}" media="all" type="text/css" />
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="all" type="text/css" />
-    <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
-    <link rel="canonical" href="URLが入る">
-  </head>
-  
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta property='og:type' content='website'>
+  <meta property='og:title' content='WebデザイナーMarie Nishimae ポートフォリオ'>
+  <meta property='og:url' content='URLが入る'>
+  <meta property='og:description' content='Marie Nishimaeのポートフォリオサイトです。'>
+  <meta property="og:image" content="{{ url_for('static', filename='img/ogp.png') }}">
+  <meta name="description" content="Marie Nishimaeのポートフォリオサイトです" />
+  <title>Marie Nishimae ポートフォリオ</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons+Outlined" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/destyle.css') }}" media="all" type="text/css" />
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" media="all" type="text/css" />
+  <link rel="shortcut icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+  <link rel="canonical" href="URLが入る">
+</head>
+
 <body>
   <div class="wrapper">
     <!-- header -->
     <header class="header">
       <div class="container">
         <h1 class="header-logo">
-          <a href="index.html">Marie Nishimae</a>
+          <a href="/#mv">Marie Nishimae</a>
         </h1>
+
         <nav class="gnav">
           <ul class="gnav-list">
-            <li class="gnav-item"><a href="./index.html#works">WORKS</a></li>
-            <li class="gnav-item"><a href="./index.html#skill">SKILL</a></li>
-            <li class="gnav-item"><a href="./index.html#about">ABOUT</a></li>
-            <li class="gnav-item"><a href="./index.html#contact">CONTACT</a></li>
+            <li class="gnav-item"><a href="/#works">WORKS</a></li>
+            <li class="gnav-item"><a href="/#skill">SKILL</a></li>
+            <li class="gnav-item"><a href="/#about">ABOUT</a></li>
+            <li class="gnav-item"><a href="/#contact">CONTACT</a></li>
           </ul>
         </nav>
       </div>
@@ -82,8 +84,7 @@
     </footer>
     <!-- /footer -->
   </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  js/script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </body>
 
 </html>
