@@ -1,0 +1,1698 @@
+body {
+    background-color: rgb(253, 248, 217);
+    font-family: "Noto Serif JP", serif;
+    box-sizing: border-box;
+    max-width: 100%;
+    overflow-x: hidden;
+    /* 横スクロールを防ぐ */
+}
+
+.wrapper {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header */
+.title img {
+    width: 313px;
+    height: auto;
+    position: fixed;
+    z-index: 100;
+    left: 20px;
+    padding: 20px;
+}
+
+.header-nav {
+    display: flex;
+    flex-direction: column;
+    /* 縦並びにする */
+    align-items: flex-end;
+    /* 右揃えにする */
+    gap: 10px;
+    margin-left: 700px;
+    position: fixed;
+    /* 固定位置にする */
+    z-index: 1200;
+}
+
+.gnav {
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.gnav-item {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    z-index: 1200;
+}
+
+.tablinks {
+    padding: 30px;
+}
+
+
+.btn-menu {
+    display: none;
+    /* デフォルトではボタンを非表示 */
+}
+
+.btn-menu {
+    display: block;
+}
+
+.gnav__link--active {
+    display: flex;
+    /* フレックスコンテナにする */
+    text-decoration: none;
+    /* 下線を消す */
+    text-align: center;
+    /* 中央揃え */
+    background-size: 264px;
+    /* 追加 */
+    justify-content: space-evenly;
+    /* 子要素を均等に配置 */
+    align-items: center;
+    /* 垂直方向で中央揃え */
+    color: #b2883a;
+    z-index: 1200;
+}
+
+.gnav__link--active a:hover {
+    color: #b2883a;
+    /* ホバー時のリンクのテキスト色 */
+    z-index: 1200;
+}
+
+.gnav__link--active:hover {
+    background-color: #b89b6584;
+    /* ホバー時の背景色 */
+    z-index: 1200;
+}
+
+.gnav__link--active {
+    background-color: #cccccc00;
+    /* アクティブなタブの背景色 */
+    z-index: 1200;
+}
+
+.social-icons {
+    position: relative;
+    display: flex;
+    gap: 10px;
+    /* アイコン間のスペースを調整 */
+    width: 96px;
+    align-items: flex-end;
+    z-index: 1200;
+    margin-right: 30px;
+}
+
+.social-icon {
+    width: 26.29px;
+    /* アイコンのサイズを調整 */
+    height: 26.29px;
+    padding-left: 0;
+    /* パディングを調整 */
+}
+
+/* header */
+
+/* footer */
+.page1 small {
+    display: block;
+    position: relative;
+    bottom: 200px;
+    width: 100%;
+    padding-left: 650px;
+    color: #b2883a;
+    justify-content: center;
+    top: 200px;
+}
+
+.footerimg2-blog {
+    position: relative;
+    top: 490px;
+    left: 50px;
+    display: flex;
+    bottom: -10px;
+}
+
+#blog-footer {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+#small-blog {
+    display: flex;
+    width: 100%;
+    color: #b2883a;
+    align-items: center;
+    justify-content: center;
+    /* 水平方向にセンター */
+    padding-left: 0px t;
+    /* padding-leftをリセット */
+    padding-top: 190px;
+    right: 30px;
+}
+
+.footerimg-blog {
+    display: flex;
+    top: 142px;
+    /* 必要に応じて調整 */
+    padding-left: 1050px;
+    width: 640px;
+    height: 317px;
+}
+
+.footerimg {
+    display: flex;
+    position: relative;
+    padding-left: 1050px;
+    width: 640px;
+    height: 317px;
+}
+
+.footerimg2 {
+    position: relative;
+    top: 300px;
+    left: 50px;
+    display: flex;
+}
+
+/* /footer */
+
+/* home */
+.home {
+    position: relative;
+    display: flex;
+    left: 290px;
+    align-items: center;
+    bottom: 50px;
+    justify-content: center;
+}
+
+.button2 {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    margin: 4px auto;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
+    line-height: 2;
+    /* 行間を設定 */
+}
+
+.news-home-date {
+    margin-right: 10px;
+}
+
+#news-title-home {
+    color: rgb(132, 103, 0);
+    display: inline-flex;
+    /* 要素の幅をテキストに合わせる */
+    position: relative;
+    text-decoration: underline;
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    font-size: 22px;
+    text-align: center;
+    justify-content: center;
+    padding-left: 157px;
+    line-height: 10px;
+}
+
+.concept-content-img {
+    margin: 0 auto;
+    /* 画像を中央揃え */
+    align-items: center;
+    justify-content: center;
+}
+
+#concept-p {
+    position: relative;
+    color: rgb(132, 103, 0);
+    font-family: "Noto Serif JP", serif;
+    text-decoration: none;
+    margin: 4px auto;
+    line-height: 2;
+    /* 行間を設定 */
+    bottom: 30px;
+    font-size: small;
+}
+
+.button3 {
+    position: relative;
+    background: transparent;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    top: 20px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.concept h3 {
+    color: rgb(132, 103, 0);
+    display: inline-flex;
+    /* 要素の幅をテキストに合わせる */
+    position: relative;
+    text-decoration: underline;
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    font-size: 35px;
+}
+
+#concept-home {
+    flex-direction: column;
+    font-size: 32px;
+    color: rgb(132, 103, 0);
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    z-index: 1;
+    /* 他の要素より前面に表示 */
+    padding: 10px;
+    /* パディングを追加して確認 */
+    right: 300px;
+    position: relative;
+}
+
+.concept-sub-title {
+    position: relative;
+    left: 40px;
+}
+
+.concept-home-main {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* 絶対位置に変更 */
+    top: 10px;
+    /* 上に移動 */
+    right: 600px;
+    /* 右に移動 */
+    z-index: 1000;
+    /* 他の要素より前面に表示 */
+}
+
+.concept-content {
+    position: relative;
+    /* 子要素の絶対位置の基準にする */
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    border-radius: 10px;
+    margin-top: 400px;
+    padding: 30px;
+    justify-content: center;
+    text-align: center;
+    left: 300px;
+}
+
+#concept-home-title {
+    position: relative;
+    bottom: 50px;
+}
+
+.concept img,
+.concept button {
+    margin-top: 10px;
+    z-index: 1000;
+    /* 他の要素より大きい値を設定 */
+}
+
+.menu-image {
+    position: absolute;
+    /* relative から absolute に変更 */
+    left: 300px;
+    width: 80%;
+    /* 必要に応じて調整 */
+    height: auto;
+    /* 必要に応じて調整 */
+    z-index: 0;
+    /* カラムの下に配置 */
+    bottom: -450px;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.menu-p2-left {
+    font-size: small;
+    line-height: 50px;
+}
+
+.menu h3 {
+    color: rgb(132, 103, 0);
+    text-decoration: underline;
+    width: fit-content;
+    font-size: 35px;
+    margin-bottom: 10px;
+    z-index: 1000;
+
+}
+
+
+#menu-p1 {
+    text-align: start;
+    color: rgb(132, 103, 0);
+    margin: 5px auto;
+    width: fit-content;
+    display: inline-block;
+    z-index: 1000;
+    bottom: 30px;
+    margin-top: 30px;
+}
+
+#menu-p2,
+#menu-p3 {
+    text-align: left;
+    color: rgb(132, 103, 0);
+    margin: 2px auto;
+    width: fit-content;
+    display: inline-block;
+    border-bottom: 1px dotted rgb(132, 103, 0);
+    z-index: 1000;
+    line-height: 2;
+}
+
+.menu-content img {
+    display: block;
+    margin: 0 auto;
+}
+
+.menu-column {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    z-index: 1000;
+    margin-left: 530px;
+    top: 250px;
+    position: relative;
+}
+
+.menu-content {
+    position: relative;
+    margin-top: 200px;
+}
+
+.menu-content h3,
+.menu-content p,
+.menu-content span {
+    margin: 6px 0;
+    /* 上下のマージンを設定 */
+    display: inline-block;
+    /* インラインブロック要素として扱う */
+    z-index: 1000;
+}
+
+#main-page-parts-menu {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    left: 7px;
+    bottom: 3px;
+    align-items: center;
+    top: 1200px;
+    justify-content: center;
+}
+
+.menu-left {
+    flex-direction: column;
+    position: relative;
+}
+
+.menu-category {
+    flex-direction: column;
+    /* 子要素を縦に並べる */
+    align-items: flex-start;
+    /* 左揃えにする */
+    background-color: rgb(132, 103, 0);
+    border-radius: 15px;
+    /* 角丸の半径を指定 */
+    padding: 20px;
+    /* 内側の余白を追加 */
+    box-shadow: 0 4px 8px rgb(132, 103, 0);
+    /* ドロップシャドウを追加 */
+    height: 489px;
+    width: 130px;
+    z-index: 10000;
+    position: relative;
+    padding: 10px;
+    margin-left: 44px;
+    padding-left: 15px;
+}
+
+.menu-flex {
+    display: flex;
+    position: relative;
+    justify-content: left;
+    /* 子要素を親要素内で中央に揃える */
+    margin-left: 50px;
+}
+
+#menu-main-img-grid1,
+#menu-main-img-grid2 {
+    color: #b2883a;
+}
+
+#menu-title {
+    text-align: left;
+    display: block;
+    /* inline-flexからblockに変更 */
+    font-size: 32px;
+    color: rgb(132, 103, 0);
+    font-family: "Noto Serif JP", serif;
+    position: relative;
+    /* 擬似要素の基準となる */
+    text-decoration: underline;
+    /* テキストデコレーションを追加 */
+    text-decoration-color: rgb(132, 103, 0);
+    /* デコレーションの色を設定 */
+    text-decoration-thickness: 2px;
+    /* デコレーションの太さを設定 */
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    padding-top: 100px;
+    padding-left: 100px;
+    align-self: flex-start;
+    /* 左に配置 */
+}
+
+.button4 {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    place-items: center;
+    /* 水平方向と垂直方向に中央揃え */
+    z-index: 1000;
+    top: 50px;
+}
+
+.blog-img {
+    position: relative;
+    display: flex;
+    /* 追加：flexbox設定 */
+    flex-direction: column;
+    align-items: center;
+    /* ここを sticky に変更 */
+    z-index: 1000;
+    top: 200px;
+}
+
+#blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* 必要に応じて行を折り返す */
+    bottom: 155px !important;
+    position: relative;
+    color: #b2883a;
+    z-index: 1000;
+    justify-content: space-between;
+    /* 要素の間に均等なスペースを追加 */
+    align-items: center;
+    /* 要素を縦方向に中央揃え */
+    margin-right: 155px;
+    margin-left: 145px;
+    left: -55px;
+}
+
+#blog-container p#blog {
+    margin: 85px 85px;
+    /* 10pxの左右の間隔を設定 */
+}
+
+#blog-home-title {
+    margin: 20px;
+    position: relative;
+}
+
+.blog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    bottom: 450px !important;
+    margin-left: 10px;
+    /* 必要に応じて調整 */
+    z-index: 1000;
+    justify-content: center;
+}
+
+#blog-p {
+    line-height: 3;
+    /* 行間を設定 */
+    position: relative;
+    bottom: 30px;
+}
+
+.blog-content {
+    align-items: center;
+    position: relative;
+    margin-bottom: 150 !important;
+    /* 必要に応じて調整 */
+    margin-top: 600px !important;
+    z-index: 900;
+    /* 他の要素より前面に表示 */
+    left: 5px;
+}
+
+.button5 {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    bottom: 20px;
+}
+
+.blog-category {
+    flex-direction: column;
+    /* 子要素を縦に並べる */
+    align-items: flex-start;
+    /* 左揃えにする */
+    background-color: rgb(132, 103, 0);
+    border-radius: 15px;
+    /* 角丸の半径を指定 */
+    padding: 20px;
+    /* 内側の余白を追加 */
+    box-shadow: 0 4px 8px rgb(132, 103, 0);
+    /* ドロップシャドウを追加 */
+    height: 489px;
+    width: 130px;
+    z-index: 10000;
+    position: relative;
+    padding: 10px;
+    margin-left: 44px;
+    padding-left: 15px;
+}
+
+#news-title h4 {
+    color: rgb(132, 103, 0);
+    font-size: 32px;
+    position: relative;
+    text-decoration: underline;
+    align-items: center;
+    text-align: center;
+    line-height: 8px;
+}
+
+.blog p {
+    color: rgb(132, 103, 0);
+    font-size: 14px;
+    text-align: left;
+    padding: 0;
+    /* パディングをリセット */
+    line-height: 1.2;
+    /* 行間を狭める */
+    margin: 5px auto;
+    /* 上下左右の余白を設定 */
+}
+
+.blog h3 {
+    color: rgb(132, 103, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline;
+    width: fit-content;
+    font-size: 35px;
+    margin: 10px 0;
+    /* 上下のマージンを狭める */
+    padding: 0;
+    /* パディングをリセット */
+    position: relative;
+    bottom: 20px;
+    /* 必要に応じて微調整 */
+    line-height: 1.2;
+    /* 行間を狭める */
+}
+
+.button6 {
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    top: 10px;
+    margin-left: 110px;
+    align-items: center;
+}
+
+.access {
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    padding-top: 9px;
+    z-index: 1000;
+    top: 320px;
+    text-align: center;
+    padding-left: 530px;
+    z-index: 1400;
+    position: relative;
+    justify-content: center;
+}
+
+.access-p {
+    display: flex;
+    position: relative;
+    text-align: left;
+}
+
+.access p {
+    color: rgb(253, 248, 217);
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.access-home-title {
+    position: relative;
+    color: rgb(253, 248, 217);
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    border-radius: 1px;
+    font-size: 35px;
+}
+
+.scroll {
+    position: relative;
+    display: flex;
+    left: 40px;
+    top: 350px;
+    width: 12px;
+    height: 142px;
+}
+
+/* /home */
+
+/* concept */
+#main-page-parts-concept {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    left: 7px;
+    bottom: 3px;
+    align-items: center;
+    top: 1200px;
+    justify-content: center;
+}
+
+.concept_main {
+    padding-top: 500px;
+    justify-content: center;
+    display: flex;
+    /* フレックスコンテナにする */
+}
+
+/* /concept */
+
+/* menu */
+.menu-sub-title {
+    position: relative;
+    margin-top: 380px;
+    left: 40px;
+}
+
+
+.menu-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(250, 219, 187);
+    border-radius: 60px;
+    margin-top: 380px;
+    width: 1198px;
+    margin-left: 90px;
+    margin-right: 90px;
+    box-shadow: 0 4px 8px rgba(132, 103, 0, 0.418);
+}
+
+.menu-main-img1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-main-column1 {
+    flex-direction: column;
+}
+
+#menu-main-img-grid1 {
+    position: relative;
+    padding-bottom: 50px;
+
+}
+
+.menu-main-img-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 400px);
+    position: relative;
+    padding: 20px 20px 200px 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    left: 40px;
+}
+
+.menu-main {
+    display: flex;
+    position: relative;
+    align-items: center;
+    right: 170px;
+
+}
+
+/* /menu */
+
+/* newsとblog */
+
+.news-category {
+    flex-direction: column;
+    /* 子要素を縦に並べる */
+    align-items: flex-start;
+    /* 左揃えにする */
+    background-color: rgb(132, 103, 0);
+    border-radius: 15px;
+    /* 角丸の半径を指定 */
+    padding: 20px;
+    /* 内側の余白を追加 */
+    box-shadow: 0 4px 8px rgb(132, 103, 0);
+    /* ドロップシャドウを追加 */
+    height: 489px;
+    width: 130px;
+    z-index: 10000;
+    position: relative;
+    padding: 10px;
+    margin-left: 44px;
+    padding-left: 15px;
+}
+
+.news-flex,
+.blog-flex {
+    display: flex;
+    position: relative;
+    margin-top: 380px;
+    justify-content: left;
+    /* 子要素を親要素内で中央に揃える */
+    margin-left: 50px;
+}
+
+.news-new,
+.blog-new {
+    position: relative;
+    z-index: 1500;
+    justify-content: left;
+    align-items: flex-end;
+    left: 350px;
+    top: 25px;
+}
+
+.button7 {
+    width: 124px;
+    height: auto;
+    z-index: 1500;
+    pointer-events: auto;
+    position: relative;
+    top: 280px;
+    left: 500px;
+}
+
+.button8,
+.button9,
+.button10,
+.button11 {
+    margin-top: 520px;
+    width: 124px;
+    height: auto;
+    z-index: 1500;
+    position: absolute;
+    /* absoluteに変更 */
+}
+
+.button8 {
+    top: 100px;
+    /* 最初のボタンの位置 */
+    left: 800px;
+}
+
+.button9 {
+    top: 385px;
+    /* 2番目のボタンの位置 */
+    left: 800px;
+    /* 左位置を統一 */
+}
+
+.button10 {
+    top: 665px;
+    /* 3番目のボタンの位置 */
+    left: 800px;
+    /* 左位置を統一 */
+}
+
+.button11 {
+    top: 948px;
+    /* 4番目のボタンの位置 */
+    left: 800px;
+    /* 左位置を統一 */
+}
+
+#main-page-parts-news {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    align-items: center;
+    justify-content: center;
+    left: 7px;
+    bottom: 3px;
+    top: 3px;
+}
+
+
+.button12,
+.button13 {
+    width: 124px;
+    height: auto;
+    z-index: 1500;
+    position: absolute;
+    /* absoluteに変更 */
+    left: 250px;
+    top: 270px;
+}
+
+
+main.main-content,
+main.main-content-news {
+    position: relative;
+    background-color: rgb(250, 219, 187);
+    border-radius: 60px;
+    width: 1100px;
+    min-height: 2100px;
+    box-shadow: 0 4px 8px rgba(132, 103, 0, 0.418);
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.news-left {
+    flex-direction: column;
+    position: relative;
+}
+
+.news-sub-title {
+    position: relative;
+    left: 40px;
+}
+
+
+.news-content {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 248, 217);
+    border-radius: 10px;
+    height: 200px;
+    width: 420px;
+    color: rgb(132, 103, 0);
+    margin-top: 450px;
+    padding: 40px;
+    position: absolute;
+    justify-content: center;
+    left: 680px;
+    font-size: small;
+}
+
+
+#blog-title-main,
+#news-title-main {
+    color: rgb(132, 103, 0);
+    font-size: 32px;
+    position: relative;
+    text-decoration: underline;
+    /* ここを追加 */
+    padding-bottom: 20px;
+    text-align: left;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+
+.blog-wrap {
+    display: flex;
+    margin-top: 380px;
+    align-items: flex-start;
+    /* 子要素の頭を揃える */
+    justify-content: center;
+    /* 子要素を親要素内で中央に揃える */
+}
+
+
+.main-content-container {
+    display: flex;
+    flex-direction: column;
+    /* 縦に並べる場合 */
+    color: rgb(132, 103, 0);
+    position: relative;
+    align-items: center;
+}
+
+h1 {
+    font-size: 14px;
+    color: rgb(253, 248, 217);
+    font-family: "Noto Serif JP", serif;
+}
+
+.new-article-date {
+    display: flex;
+    position: relative;
+    padding-left: 100px;
+    padding-top: 30px;
+
+}
+
+.new-article-date2 {
+    display: flex;
+    position: relative;
+    padding-top: 30px;
+    justify-content: flex-start;
+}
+
+.new-article-date3 {
+    display: flex;
+    position: relative;
+}
+
+
+.new-article {
+    display: flex;
+    position: relative;
+    padding-left: 100px;
+
+}
+
+.new-article-p {
+    display: flex;
+    position: relative;
+    padding-left: 100px;
+
+}
+
+.blog-left {
+    flex-direction: column;
+    position: relative;
+
+}
+
+.blog-sub-title {
+    position: relative;
+    left: 40px;
+}
+
+
+.title h2 {
+    margin-right: 100px;
+    /* 必要に応じてこの値を調整 */
+    display: flex;
+    position: relative;
+    /* padding-top: 100px; */
+}
+
+
+.sub-title {
+    position: relative;
+    left: 40px;
+    margin-top: 380px;
+}
+
+
+
+
+#post1 {
+    width: 1000px;
+    height: 294px;
+
+}
+
+#post2,
+#post3,
+#post4,
+#post5 {
+    width: 900px;
+    height: 239px;
+}
+
+
+.left-image {
+    float: left;
+    padding-bottom: 50px;
+    margin-left: 20px;
+    margin-top: -20px;
+    position: relative;
+    margin-right: 20px;
+    /* 画像とテキストの間にスペースを追加 */
+}
+
+
+.post {
+    align-items: center;
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(253, 248, 217);
+    border-radius: 50px;
+    margin: 20px 0;
+    color: rgb(132, 103, 0);
+    width: 900px;
+    margin: 0px 0 43px 0;
+    /* 上に動かすためにmargin-topを負の値に設定 */
+    font-size: medium;
+}
+
+
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* テキストを左揃え */
+    position: relative;
+}
+
+.post-content1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    padding-left: 200px;
+    padding-right: 20px;
+    width: 100%;
+}
+
+.post-content2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+}
+
+
+
+/* 親要素にフレックスボックスを適用 */
+.parent-container {
+    display: flex;
+    justify-content: center;
+    /* 要素を中央揃えに */
+    width: 1000px;
+    height: 354.19px;
+    border-radius: 50px;
+    flex-direction: row;
+    /* 横並びにする */
+    align-items: flex-start;
+    /* 上揃えにする */
+    position: relative;
+    /* 親要素を相対位置にする */
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-bottom: 100px;
+}
+
+.archive {
+    position: relative;
+    z-index: 1000;
+    left: 210px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#post6,
+#post7 {
+    position: relative;
+    /* 相対位置にする */
+    display: flex;
+    /* フレックスボックスを適用 */
+    flex-direction: row;
+    /* 横並びにする */
+    align-items: center;
+    background-color: rgb(253, 248, 217);
+    border-radius: 30px;
+    height: 200px;
+    width: 600px;
+    justify-content: center;
+    right: 50px;
+    padding-top: 60px;
+    padding-bottom: 30px;
+    font-size: 13px;
+}
+
+/* /newsとblog */
+
+/* access */
+
+
+.access-main-title {
+    text-decoration: underline;
+    align-items: center;
+    margin-left: 75px;
+    position: relative;
+    font-size: 32px;
+}
+
+.access-main-text {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    position: absolute;
+    padding-bottom: 20px;
+    z-index: 1000;
+    margin-left: 190px;
+    bottom: 450px;
+    right: 350px;
+    color: rgb(253, 248, 217);
+}
+
+.access-bottom-main {
+    position: relative;
+    bottom: 0;
+    width: 80%;
+    height: auto;
+    z-index: 1200;
+    align-items: center;
+    justify-content: center;
+}
+
+.access-sub-title {
+    position: relative;
+    left: 40px;
+}
+
+.access img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.access .overlay-text {
+    position: absolute;
+    color: rgb(132, 103, 0);
+    font-size: 35px;
+    border-bottom: 1px solid rgb(132, 103, 0);
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+    top: 50px;
+    left: 50px;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    /* 画像の上に表示 */
+}
+
+.access-bottom-main2 {
+    display: flex;
+    bottom: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 200px;
+}
+
+.main-content-container2 {
+    justify-content: center;
+    color: #b2883a;
+    flex-direction: column;
+    /* 縦に並べる場合 */
+    position: relative;
+    padding-bottom: 300px;
+    padding-left: 200px;
+    font-size: 20px;
+}
+
+.left-image2 {
+    width: 147px;
+    height: 175px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 20px;
+    margin-top: -20px;
+    position: relative;
+}
+
+.left-image3 {
+    width: 147px;
+    height: 175px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    float: left;
+    margin-left: 20px;
+    position: relative;
+}
+
+#main-page-parts {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    align-items: center;
+    justify-content: center;
+    left: 7px;
+    bottom: 3px;
+    top: 3px;
+}
+
+.access-ul {
+    position: relative;
+    text-align: left;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: block;
+    right: 40px;
+}
+
+.main-content2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* 縦一列に並べる */
+    align-items: center;
+    background-color: rgb(250, 219, 187);
+    border-radius: 60px;
+    width: 1198px;
+    height: 1750px;
+    box-shadow: 0 4px 8px rgba(132, 103, 0, 0.418);
+    /* ドロップシャドウを追加 */
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+
+.main-content3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* 縦一列に並べる */
+    align-items: center;
+    background-color: rgb(250, 219, 187);
+    border-radius: 60px;
+    width: 1198px;
+    height: 1750px;
+    box-shadow: 0 4px 8px rgba(132, 103, 0, 0.418);
+    /* ドロップシャドウを追加 */
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+#access-title {
+    text-align: left;
+    display: block;
+    /* inline-flexからblockに変更 */
+    font-size: 32px;
+    color: rgb(132, 103, 0);
+    font-family: "Noto Serif JP", serif;
+    position: relative;
+    /* 擬似要素の基準となる */
+    text-decoration: underline;
+    /* テキストデコレーションを追加 */
+    text-decoration-color: rgb(132, 103, 0);
+    /* デコレーションの色を設定 */
+    text-decoration-thickness: 2px;
+    /* デコレーションの太さを設定 */
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    padding-top: 200px;
+    align-self: flex-start;
+    /* 左に配置 */
+}
+
+#main-page-parts-access {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    left: 7px;
+    bottom: 3px;
+    align-items: center;
+    top: 1200px;
+    justify-content: center;
+}
+
+.access-flex {
+    display: flex;
+    margin-top: 380px;
+    align-items: flex-start;
+    /* 子要素の頭を揃える */
+    width: auto;
+    position: relative;
+    justify-content: left;
+    /* 子要素を親要素内で中央に揃える */
+    margin-left: 50px;
+}
+
+.access-img {
+    padding-left: 100px;
+    bottom: 300px;
+    position: relative;
+}
+
+.access-main-content {
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 50px;
+    width: 95%;
+    height: auto;
+    color: rgb(132, 103, 0);
+    z-index: 1300;
+}
+
+.access-main-content li p {
+    position: relative;
+    margin: 0;
+    line-height: 1.9;
+    text-align: left;
+    list-style-position: inside;
+    padding-left: 0px;
+    color: rgb(132, 103, 0);
+    z-index: 1000;
+}
+
+.access-main-content ul li {
+    margin-bottom: 15px;
+    /* 縦の間隔を15pxに設定 */
+}
+
+.access-main-content p {
+    line-height: 2;
+    /* letter-spacing: 0.1em; */
+}
+
+.access-main-content ul {
+    font-size: 20px;
+}
+
+.access-bottom {
+    bottom: 20px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 200px;
+    margin-right: 130px;
+    display: flex;
+}
+
+.main-content {
+    flex-direction: column;
+    position: relative;
+    font-size: 15px;
+    display: flex;
+}
+
+
+/* /access */
+
+/* concept */
+
+.concept-main-text {
+    position: relative;
+    margin-top: 1px;
+}
+
+.concept-main-h2 {
+    font-size: 42px;
+    text-decoration: underline;
+    position: relative;
+    text-align: center;
+}
+
+.concept-main-p {
+    font-size: 14px;
+    padding-bottom: 5px;
+    line-height: 2;
+    /* 行の高さを1.5倍に設定 */
+
+}
+
+.concept-main-img {
+    position: relative;
+    margin-top: 100px;
+}
+
+.concept-main-content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 610px;
+    padding-left: 0px;
+    color: rgb(132, 103, 0);
+    z-index: 1000;
+}
+
+/* /concept */
+
+/* contact */
+#main-page-parts-contact {
+    display: flex;
+    position: absolute;
+    /* 絶対位置に設定 */
+    z-index: 1100;
+    /* タブ2よりも高いz-indexを設定 */
+    align-items: center;
+    justify-content: center;
+    margin-right: 220px;
+    bottom: -115px; 
+}
+
+.main-content-container3 {
+    justify-content: center;
+    color: rgb(132, 103, 0);
+    flex-direction: column;
+    /* 縦に並べる場合 */
+    position: relative;
+    padding-bottom: 300px;
+    padding-left: 120px;
+    font-size: 20px;
+}
+
+.contact-text-date {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact-text {
+    color: rgb(132, 103, 0);
+    position: relative;
+}
+
+#contact-form {
+    position: relative;
+    align-items: center;
+    margin-top: 30px;
+    z-index: 1500;
+}
+
+#contact-form input[type="submit"] {
+    color: rgb(253, 248, 217);
+    background-color: rgb(132, 103, 0);
+    margin-top: 30px;
+}
+
+.contact-title {
+    padding-top: 200px;
+    text-decoration: underline;
+    color: rgb(132, 103, 0);
+}
+
+.contact-flex {
+    display: flex;
+    position: relative;
+    margin-top: 380px;
+    border-radius: 10px;
+    justify-content: left;
+    margin-left: 50px;
+    z-index: 1100;
+}
+
+.contact-sub-title {
+    position: relative;
+    left: 40px;
+}
+
+.contact-main-content input,
+.contact-main-content textarea,
+.contact-main-content input[type="radio"] {
+    color: rgb(132, 103, 0);
+    display: flex;
+    margin-bottom: 20px;
+    /* 入力フィールドとその他の要素の下に間隔を追加 */
+    z-index: 1500;
+}
+
+.contact-main-content input[type="radio"] {
+    margin-left: 20px;
+    z-index: 1500;
+}
+
+input[type="text"] {
+    color: rgb(132, 103, 0);
+    border: none;
+    z-index: 1500;
+}
+
+#contact-form input[type="text"],
+#contact-form input[type="radio"]+label {
+    color: rgb(132, 103, 0);
+    z-index: 1500;
+}
+
+#contact-form label {
+    color: rgb(132, 103, 0);
+    z-index: 1500;
+}
+
+textarea[name="message"] {
+    width: 960px;
+    height: 740px !important;
+    resize: none !important;
+    background-color: rgb(253, 248, 217);
+    box-sizing: border-box;
+    border: none;
+    color: rgb(132, 103, 0);
+    z-index: 1500;
+}
+
+textarea[name="text"] {
+    width: 60px;
+    height: 600px;
+    resize: none;
+    border-radius: 50px;
+    background-color: rgb(253, 248, 217);
+    box-sizing: border-box;
+    color: rgb(132, 103, 0);
+    z-index: 1500;
+}
+
+input[type="submit"] {
+    background-color: rgb(132, 103, 0);
+    border: none;
+    color: rgb(253, 248, 217);
+    padding: 10px 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    position: relative;
+    justify-content: flex-end;
+    margin-left: 800px;
+    color: rgb(132, 103, 0);
+    z-index: 1500;
+}
+
+/* /contact */
+
+.parent-element {
+    overflow: hidden;
+    /* 必要に応じて追加 */
+    display: flex;
+    /* 必要に応じて追加 */
+    align-items: center;
+    /* 必要に応じて追加 */
+}
+
+.concept-main {
+    z-index: 1000;
+    padding-right: 200px;
+}
+
+.concept-flex {
+    display: flex;
+    position: relative;
+    margin-top: 380px;
+    justify-content: left;
+    /* 子要素を親要素内で中央に揃える */
+    margin-left: 50px;
+}
+
+#concept-title {
+    text-align: left;
+    display: block;
+    /* inline-flexからblockに変更 */
+    font-size: 32px;
+    color: rgb(132, 103, 0);
+    position: relative;
+    /* 擬似要素の基準となる */
+    text-decoration: underline;
+    /* テキストデコレーションを追加 */
+    text-decoration-color: rgb(132, 103, 0);
+    /* デコレーションの色を設定 */
+    text-decoration-thickness: 2px;
+    /* デコレーションの太さを設定 */
+    width: fit-content;
+    /* 要素の幅をテキストに合わせる */
+    padding-right: 800px;
+    z-index: 1000;
+    padding-top: 200px;
+}
+
+
+
+
+.category-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+    color: rgb(253, 248, 217);
+}
+
+.category-list li {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.category-list a {
+    text-decoration: none;
+    color: rgb(253, 248, 217);
+    padding: 10px;
+    display: block;
+    border-radius: 5px;
+    /* transition: background-color 0.3s, color 0.3s; */
+    font-family: "Noto Serif JP", serif;
+    text-align: left;
+    /* この行を追加 */
+    pointer-events: auto;
+    /* クリックを有効にする */
+}
+
+.category-list a:hover {
+    background-color: #b89b6584;
+    color: #fff;
+}

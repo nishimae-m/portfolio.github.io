@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Natural cafe CONTACT</title>
+  <link rel="stylesheet" href="destyle.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+
+<body class="page1">
+  <div class="wrapper">
+    <div class="scroll"><img src="img/scroll.png" alt="scroll"></div>
+    <div class="header-nav">
+      <div class="title">
+        <img src="img/タイトル.png" alt="タイトル">
+      </div>
+      <header>
+        <nav class="gnav">
+          <ul class="gnav-item">
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="HOME.html">HOME</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="NEWS.html">NEWS</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="CONCEPT.html">CONCEPT</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="MENU.html">MENU</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="BLOG.html">BLOG</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="ACCESS.html">ACCESS</a>
+            </li>
+            <li class="tablinks">
+              <a class="gnav__link gnav__link--active" href="CONTACT.html">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8"
+          target="_blank">
+          <img src="img/フェイスブックアイコン.png" alt="Facebook" class="social-icon">
+        </a>
+        <a href="https://www.instagram.com/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8"
+          target="_blank">
+          <img src="img/インスタアイコン.png" alt="Instagram" class="social-icon">
+        </a>
+        <a href="https://www.x.com/%E3%81%82%E3%81%AA%E3%81%9F%E3%81%AE%E3%83%9A%E3%83%BC%E3%82%B8" target="_blank">
+          <img src="img/エックスアイコン.png" alt="X" class="social-icon">
+        </a>
+      </div>
+    </div>
+    <div class="contact-flex">
+      <div class="contact-sub-title"><img src="img/contact.subtitle.png" alt="contact-subtitle"></div>
+      <main class="main-content2">
+        <div id="main-page-parts-contact"><img src="img/コーヒー豆その他飾り2.png" alt="コーヒー豆その他飾り"></div>
+          <div class="main-content-container3">
+              <div class="contact-title">
+                  <h2 id="contact-title">CONTACT</h2>
+              </div>
+              <div class="contact-main-content2">
+                  <!-- フォームにid属性を追加 -->
+                  <form id="contact-form" action="contact.php" method="post">
+                    <div class=contact-text >氏名</div>
+                      <input type="text" placeholder="名字 名前" name="name" autocomplete="off"><br>
+                      <div class=contact-text >生年月日</div>
+                      <div class="contact-text-date">
+                      <input type="text" placeholder="生年月日" name="dob" autocomplete="off"><input type="radio" name="gender" value="男"><div class=contact-text>男</div><input type="radio" name="gender" value="女"><div class=contact-text>女</div><input type="radio" name="gender" value="その他"><div class=contact-text>その他</div></div>
+                      <div class=contact-text>住所</div>
+                      <input type="text" placeholder="住所" name="address" autocomplete="off">
+                      <div class=contact-text>お問い合わせ内容</div>
+                      <textarea name="message" placeholder="" required autocomplete="off"></textarea>
+                      <input type="submit" value="送信">
+                  </form>
+              </div>
+          </div>
+      </main>
+  </div>
+  </div>
+  </div>
+
+  <div class=" footerimg2">
+    <img src="img/フッターの名前と住所.png" alt="フッターの名前と住所">
+  </div>
+  <small>&copy; copyright© 2024 Natural cafe All rights reserved.</small>
+  <div class="footerimg">
+    <img src="img/footer コーヒー豆.png" alt="footerコーヒー豆">
+  </div>
+  </div>
+  </div>
+  <!-- ここにJavaScriptを追加 -->
+  <script>
+   document.getElementById('contact-form').addEventListener('submit', function (event) {
+    event.preventDefault(); // デフォルトのフォーム送信を防止
+
+    // フォームデータを収集
+    const formData = new FormData(this);
+
+    // フォームデータをオブジェクトに変換
+    const data = {};
+    formData.forEach((value, key) => {
+        data[key] = value;
+    });
+
+    // フォームデータをコンソールに表示（テスト用）
+    console.log(data);
+
+    // ここでサーバーにデータを送信する代わりに、コンソールに表示するだけにします
+    alert('フォームが送信されました。コンソールを確認してください。');
+});
+  </script>
+</body>

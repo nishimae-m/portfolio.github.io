@@ -1,0 +1,38 @@
+/* 全ての要素のマージンとパディングをリセット */
+* {
+    box-sizing: border-box;
+}
+
+/* リストのスタイルをリセット */
+ul, ol {
+    list-style: none;
+}
+
+/* リンクのデフォルトスタイルをリセット */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* テーブルのスタイルをリセット */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* 画像のデフォルトスタイルをリセット */
+img {
+    display: block;
+}
+
+/* フォーム要素のスタイルをリセット */
+input, button, textarea, select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    box-shadow: none;
+}
