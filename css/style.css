@@ -430,6 +430,17 @@ body {
   color: rgb(163, 120, 255);
 }
 
+#js-page-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  border-radius: 5px;
+  display: none; /* 初期状態では非表示 */
+}
+
 /*--------------------------------
  下層：Worksページ
 ---------------------------------*/
