@@ -12,10 +12,4 @@ document.addEventListener("DOMContentLoaded", function () {
       window.scrollTo({ top: position, behavior: "smooth" });
     });
   });
-
-  // ページトップ
-  document.getElementById("js-page-top").addEventListener("click", function () {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-    return false;
-  });
 });
